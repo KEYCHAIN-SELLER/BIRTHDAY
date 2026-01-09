@@ -1,0 +1,50 @@
+body{margin:0;font-family:Arial,sans-serif}
+.slide{display:none;height:100vh;width:100%}
+.slide.active{display:flex;justify-content:center;align-items:center}
+
+/* PASSWORD */
+.lock-box{background:rgba(255,255,255,.85);padding:30px;border-radius:12px;text-align:center}
+.lock-title{color:red;font-size:32px}
+.hint{color:black}
+input{padding:10px;width:220px}
+button{padding:10px 20px;margin-top:10px}
+
+/* COMMON */
+.center-box{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.main-text{color:red;font-size:28px}
+.sub-text{color:white;font-size:26px}
+
+/* IMAGES */
+.shinchan{width:300px;cursor:pointer}
+.eugene{width:260px}
+.door{width:200px;cursor:pointer}
+.door-text{color:black}
+
+/* MAHADEV */
+.split-box{display:flex;gap:20px;align-items:center}
+.mahadev{width:260px}
+.blessing{color:white;max-width:400px}
+.heart{margin-top:15px;cursor:pointer;color:black;font-size:18px}
+
+/* CLOCK */
+.clock-video{width:260px;height:260px;object-fit:cover}
+
+/* GIRLFRIEND */
+.gf-photo{width:260px;border-radius:12px}
+.typing{font-size:22px;color:black;min-height:80px}
+.final-btn{position:absolute;bottom:20px;right:20px}
+
+/* FLOWERS */
+.flower-slide{position:relative}
+.flowers::before{
+  content:"🌸 🌼 🌺 🌸 🌼";
+  position:absolute;
+  top:-10%;
+  animation:fall 5s linear infinite;
+}
+@keyframes fall{
+  to{top:110%}
+}
+
+/* FINAL VIDEO */
+.final-video{width:90%;max-width:400px;border:5px solid white}
