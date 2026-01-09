@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SLIDE 1 : PASSWORD (NO AUDIO) -->
+<section class="slide active lock" style="background:url('lock-bg.jpg') center/cover no-repeat;">
+  <div class="lock-box">
+    <h1 class="lock-title">Aaaiiyee apka swagat haii jii jara password toh daliyee!!</h1>
+    <p class="hint">Hint: hum dono ek hai</p>
+    <input type="password" id="pass" placeholder="Enter password">
+    <button onclick="checkPass()">Enter</button>
+  </div>
+</section>
+
+<!-- SLIDE 2 : SHINCHAN -->
+<section class="slide" data-audio="step1.mp3" style="background:url('bg1.jpg') center/cover no-repeat;">
+  <div class="center-box">
+    <img src="shinchan.png" class="shinchan" onclick="nextSlide()">
+    <h1 class="main-text">Happy birthday BHONDI ji</h1>
+  </div>
+</section>
+
+<!-- SLIDE 3 : EUGENE + DOOR -->
+<section class="slide" data-audio="step2.mp3" style="background:url('bg2.jpg') center/cover no-repeat;">
+  <div class="center-box">
+    <img src="eugene.png" class="eugene">
+    <h2 class="sub-text">Happy birthday MY dear Cinderella<br>I LOVEE YOU MERE BAACHE..BLESS UHH
+                   For more blessings tap on the door</h2>
+    <img src="door.jpg" class="door" onclick="nextSlide()">
+    <p class="door-text">OPEN</p>
+  </div>
+</section>
+
+<!-- SLIDE 4 : MAHADEV -->
+<section class="slide" data-audio="step3.mp3" style="background:url('bg3.jpg') center/cover no-repeat;">
+  <div class="split-box">
+    <img src="mahadev.png" class="mahadev">
+    <div class="blessing">
+      <h2>🙏 आशीर्वाद 🙏</h2>
+      <p>
+        जन्मदिन मुबारक हो मेरी बेटी।  
+        तुम हमेशा खुश रहो,  
+        तुम्हारी सारी ख्वाहिशें पूरी हों  
+        और तुम जीवन में सदा तरक्की करो।
+      </p>
+      <div class="heart" onclick="nextSlide()">❤️ isko chhoo kar dekho</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5 : CLOCK -->
+<section class="slide" data-audio="step4.mp3" style="background:url('bg4.jpg') center/cover no-repeat;">
+  <div class="center-box">
+    <video src="clock.mp4" class="clock-video" autoplay muted loop></video>
+    <button onclick="nextSlide()">Next</button>
+  </div>
+</section>
+
+<!-- SLIDE 6 : GIRLFRIEND PHOTO + FLOWER -->
+<section class="slide flower-slide" data-audio="step5.mp3" style="background:url('bg5.jpg') center/cover no-repeat;">
+  <div class="center-box">
+    <img src="girlfriend.jpg" class="gf-photo">
+    <!-- HAPPY BIRTHDAY MY CHILD-->
+    <p class="love-text">I lovee you yarr..i love you soo much
+     ptani kesa lgera gift tuje yeee but i want to say only one thing from all these ki I LOVEE YOU and i lovee too celebrate your bithday with you because you feel happy when you celebrate your birthday and i only want to make your birthday special..I LOVEE YOUU..ek chota gift or hai aage bo bi dekhlena bass mai feelings expressed ni kar para hu apni hope tu samjh jae i love you i love youu i love you and i lovee you<br></p>
+    <div class="typing" id="अर्ज़ किया है — जन्मदिन है तुम्हारा,
+सब में खुशियाँ फैलाएँगे।
+जन्मदिन है तुम्हारा,
+सब में खुशियाँ फैलाएँगे।
+ज़रा मिलो तो तुम हमसे,
+हम खुद अपने हाथों से तुम्हें केक खिलाएँगे। 😭❤️🤝"></div>
+    <button class="final-btn" onclick="nextSlide()">Final Surprise</button>
+  </div>
+  <div class="flowers"></div>
+</section>
+
+<!-- SLIDE 7 : FINAL VIDEO -->
+<section class="slide" style="background:url('final.gif') center/cover no-repeat;">
+  <div class="center-box">
+    <video src="girlfriend.mp4" class="final-video" controls></video>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
